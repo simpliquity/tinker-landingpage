@@ -1,28 +1,30 @@
-import Button from "../base/Button.js";
-import Form from "../form/Form.js";
-import I18n from "../locale/I18n.js";
-import React from "react";
+import I18n from "../locale/I18n";
+import React, { useState } from "react";
+import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Grid from "@material-ui/core/Grid";
+import { Title, Description } from "../features/typography";
 
 const TeacherLogin = () => {
 
-    const submitForm = () => {
-        window.location = `https://www.tinkerlamp.com/`;
-    };
-
     return (
-        <Form onSubmit={submitForm}>
-            <p>
-                <I18n label="TeacherLoginDescription" />
-            </p>
-            <Button
-                flat={true}
-                type={"confirm"}
-                label={<I18n label="StartActivity" />}
-                style={{
-                    width: "100%"
-                }}
-            />
-        </Form>
+        <Card style={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }} >
+            <CardContent>
+                <Title>
+                    <I18n label="TeacherLogin" />
+                </Title>
+                <Description>
+                    <I18n label="TeacherLoginDescription" />
+                </Description>
+            </CardContent>
+            <CardActions>
+                <Button variant="contained" color="primary" href="https://www.tinkerlamp.com/" >
+                    <I18n label="Open" />
+                </Button>
+            </CardActions>
+        </Card>
     );
 };
 

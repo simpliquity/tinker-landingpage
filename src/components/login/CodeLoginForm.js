@@ -1,37 +1,39 @@
-import Button from "../base/Button.js";
-import Form from "../form/Form.js";
-import TextInput from "../form/TextInput.js";
 import I18n from "../locale/I18n.js";
 import React, { useState } from "react";
+import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import TextField from "@material-ui/core/TextField";
+import { Title, Description } from "../features/typography";
 
 const CodeLoginForm = () => {
 
     const [code, setCode] = useState("");
 
-    const submitForm = () => {
-        const parsedCode = code.replace(/[^a-zA-Z0-9]/, "");
-        window.location = `https://www.tinkerlamp.com/code/${parsedCode}`;
+    const parsedCode = () => {
+        return code.replace(/[^a-zA-Z0-9]/, "");
     };
 
     return (
-        <Form onSubmit={submitForm}>
-            <TextInput
-                id={"formCode"}
-                label={<I18n label="ActivityCode" />}
-                placeholder="ABCD EFGH"
-                value={code}
-                handleChange={setCode}
-                required={true}
-            />
-            <Button
-                flat={true}
-                type={"confirm"}
-                label={<I18n label="StartActivity" />}
-                style={{
-                    width: "100%"
-                }}
-            />
-        </Form>
+        <Card style={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }} >
+            <CardContent>
+                <Title>
+                    <I18n label="LoginWithCode" />
+                </Title>
+                <TextField
+                    value={code}
+                    onChange={(e) => setCode(e.target.value)}
+                    variant="outlined"
+                    label={<I18n label="Code" />}
+                />
+            </CardContent>
+            <CardActions>
+                <Button variant="contained" color="primary" href={`https://www.tinkerlamp.com/code/${parsedCode()}`} >
+                    <I18n label="Open" />
+                </Button>
+            </CardActions>
+        </Card>
     );
 };
 
