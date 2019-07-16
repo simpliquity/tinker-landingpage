@@ -22,6 +22,7 @@ const CodeLoginForm = () => {
                     <I18n label="LoginWithCode" />
                 </Title>
                 <TextField
+                    fullWidth
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
                     variant="outlined"

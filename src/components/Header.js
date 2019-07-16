@@ -14,42 +14,42 @@ const Header = () => {
                 paddingBottom: `0.45rem`
             }}
         >
-            <LocaleSelector />
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    flexWrap: "wrap"
-                }}
-            >
                 <div
                     style={{
-                        paddingRight: "40px"
-                    }}
-                >
-                    <Link target="/">
-                        <Image style={{ maxWidth: "100%" }} />
-                    </Link>
-                </div>
-                {/* <div
-                    style={{
-                        flexBasis: "300px",
-                        flexGrow: 1,
-                        flexShrink: 1
+                        display: "flex",
+                        justifyContent: "space-between",
+                        flexWrap: "wrap"
                     }}
                 >
                     <div
                         style={{
-                            display: "flex",
-                            justifyContent: "flex-end",
-                            color: "#000", //theme.palette.primary.main,
-                            fontSize: "1.4rem",
-                            marginTop: "20px"
+                            paddingRight: "40px"
                         }}
                     >
-                        <I18n label="TinkerlampSlogan" />
+                        <Link target="/">
+                            <Image style={{ maxWidth: "100%" }} />
+                        </Link>
                     </div>
-                </div> */}
+                    {/* <div
+                        style={{
+                            flexBasis: "300px",
+                            flexGrow: 1,
+                            flexShrink: 1
+                        }}
+                    >
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "flex-end",
+                                color: "#000", //theme.palette.primary.main,
+                                fontSize: "1.4rem",
+                                marginTop: "20px"
+                            }}
+                        >
+                            <I18n label="TinkerlampSlogan" />
+                        </div>
+                    </div> */}
+                <LocaleSelector />
             </div>
         </header>
     );

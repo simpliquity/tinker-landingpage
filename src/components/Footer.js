@@ -44,6 +44,7 @@ const Footer = ({ classes }) => {
                         <a
                             className={classes.link}
                             href="http://www.simpliquity.com"
+                            target="_blank"
                         >
                             Simpliquity Sàrl
                         </a>

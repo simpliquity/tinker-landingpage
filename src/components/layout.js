@@ -15,7 +15,7 @@ const styles = {
     pageContainer: {
         position: "relative",
         minHeight: "100vh",
-        backgroundColor: "#37474f"
+        backgroundColor: "#212121"
     },
     contentWrap: {
         padding: "10px",
