@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 177.16536 177.16536"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="tinkerlamp-icon.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.08"
+     inkscape:cx="-272.46227"
+     inkscape:cy="666.18635"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       id="rect4523"
+       width="177.19377"
+       height="177.36072"
+       x="-5.5957247e-07"
+       y="-0.15395536"
+       style="stroke-width:0.75127935" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.343275,-475.03766)">
+    <polygon
+       points="509,203 442,203 442,223 487,223 487,250 509,250 "
+       class="st0"
+       id="XMLID_2_"
+       style="fill:#4caf50"
+       transform="translate(-297.76519,286.81149)" />
+    <polygon
+       points="428.6,203 409.6,203 362,203 362,250 384,250 384,223 410,223 410,349 509,349 509,319 485,319 485,329 434,329 434,247.6 434,223.1 434,203 "
+       class="st1"
+       id="XMLID_80_"
+       style="fill:#dcdcdc;fill-opacity:1"
+       transform="translate(-297.76519,286.81149)" />
+  </g>
+  <style
+     id="style4228"
+     type="text/css">
+	.st0{fill:#4CAF50;}
+	.st1{fill:#28323B;}
+</style>
+</svg>
