@@ -7,8 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import TextField from "@material-ui/core/TextField";
 import { Title, Description } from "../features/typography";
 
-const CodeLoginForm = () => {
-
+const CodeLoginForm = ({ classes }) => {
     const [code, setCode] = useState("");
 
     const parsedCode = () => {
@@ -16,21 +15,28 @@ const CodeLoginForm = () => {
     };
 
     return (
-        <Card style={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }} >
+        <Card>
             <CardContent>
                 <Title>
                     <I18n label="LoginWithCode" />
                 </Title>
+                <Description className={classes.description}>
+                    <I18n label="LoginWithCodeDescription" />
+                </Description>
                 <TextField
                     fullWidth
                     value={code}
-                    onChange={(e) => setCode(e.target.value)}
+                    onChange={e => setCode(e.target.value)}
                     variant="outlined"
                     label={<I18n label="Code" />}
                 />
             </CardContent>
-            <CardActions>
-                <Button variant="contained" color="primary" href={`https://www.tinkerlamp.com/code/${parsedCode()}`} >
+            <CardActions className={classes.actions}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    href={`https://www.tinkerlamp.com/code/${parsedCode()}`}
+                >
                     <I18n label="Open" />
                 </Button>
             </CardActions>

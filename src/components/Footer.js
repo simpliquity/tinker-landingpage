@@ -1,6 +1,5 @@
 import Container from "../components/Container.js";
 import I18n from "./locale/I18n.js";
-import Link from "./Link.js";
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -29,9 +28,6 @@ const Footer = ({ classes }) => {
             <Container>
                 <div className={classes.contentWrapper}>
                     <div>
-                        {/* <Link target="/PrivacyPolicy" className={classes.link}>
-                            <I18n label="PrivacyPolicy" />
-                        </Link> */}
                         <a
                             className={classes.link}
                             href="mailto:support@tinkerlamp.com"

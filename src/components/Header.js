@@ -1,4 +1,3 @@
-import I18n from "./locale/I18n.js";
 import Image from "./TinkerlampLogo.js";
 import Link from "./Link.js";
 import LocaleSelector from "./LocaleSelector.js";
@@ -14,41 +13,24 @@ const Header = () => {
                 paddingBottom: `0.45rem`
             }}
         >
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexWrap: "wrap"
+                }}
+            >
                 <div
                     style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        flexWrap: "wrap"
+                        paddingRight: "40px"
                     }}
                 >
-                    <div
-                        style={{
-                            paddingRight: "40px"
-                        }}
-                    >
-                        <Link target="/">
-                            <Image style={{ maxWidth: "100%" }} />
-                        </Link>
-                    </div>
-                    {/* <div
-                        style={{
-                            flexBasis: "300px",
-                            flexGrow: 1,
-                            flexShrink: 1
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "flex-end",
-                                color: "#000", //theme.palette.primary.main,
-                                fontSize: "1.4rem",
-                                marginTop: "20px"
-                            }}
-                        >
-                            <I18n label="TinkerlampSlogan" />
-                        </div>
-                    </div> */}
+                    <Link target="/">
+                        <Image
+                            style={{ maxWidth: "100%", maxHeight: "250px" }}
+                        />
+                    </Link>
+                </div>
                 <LocaleSelector />
             </div>
         </header>

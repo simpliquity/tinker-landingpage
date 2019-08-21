@@ -1,22 +1,6 @@
-// import React from "react";
-// import HomePage from "../components/HomePage";
-// import Container from "../components/Container";
-
-// const IndexPage = () => {
-// 	return (
-// 		<Container>
-// 			<HomePage />
-// 		</Container>
-// 	);
-// }
-
-// export default IndexPage;
-
 import Container from "../components/Container.js";
-import Features from "../components/Features.js";
 import LocaleWrapper from "../components/locale/LocaleWrapper.js";
 import PageSection from "../components/PageSection.js";
-import PageSectionTitle from "../components/PageSectionTitle.js";
 import React from "react";
 import HomePage from "../components/HomePage";
 import withRoot from "../withRoot.js";
@@ -41,14 +25,6 @@ const IndexPage = ({ classes, locale }) => (
                         <HomePage />
                     </Container>
                 </PageSection>
-                {false && (
-                    <PageSection className={classes.features}>
-                        <Container>
-                            <PageSectionTitle title="Features" />
-                            <Features />
-                        </Container>
-                    </PageSection>
-                )}
             </Layout>
         </div>
     </LocaleWrapper>
