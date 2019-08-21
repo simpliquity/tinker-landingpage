@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import TextField from "@material-ui/core/TextField";
 import { Title, Description } from "../features/typography";
 
-const CodeLoginForm = ({ classes }) => {
+const CodeLoginForm = () => {
     const [code, setCode] = useState("");
 
     const parsedCode = () => {
@@ -20,18 +20,20 @@ const CodeLoginForm = ({ classes }) => {
                 <Title>
                     <I18n label="LoginWithCode" />
                 </Title>
-                <Description className={classes.description}>
+                <Description>
                     <I18n label="LoginWithCodeDescription" />
                 </Description>
-                <TextField
-                    fullWidth
-                    value={code}
-                    onChange={e => setCode(e.target.value)}
-                    variant="outlined"
-                    label={<I18n label="Code" />}
-                />
+                <div style={{ marginTop: "10px" }}>
+                    <TextField
+                        fullWidth
+                        value={code}
+                        onChange={e => setCode(e.target.value)}
+                        variant="outlined"
+                        label={<I18n label="Code" />}
+                    />
+                </div>
             </CardContent>
-            <CardActions className={classes.actions}>
+            <CardActions>
                 <Button
                     variant="contained"
                     color="primary"

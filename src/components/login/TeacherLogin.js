@@ -6,14 +6,14 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import { Title, Description } from "../features/typography";
 
-const TeacherLogin = ({ classes }) => {
+const TeacherLogin = () => {
     return (
         <Card>
             <CardContent>
                 <Title>
                     <I18n label="TeacherLogin" />
                 </Title>
-                <Description className={classes.description}>
+                <Description>
                     <I18n label="TeacherLoginDescription" />
                 </Description>
                 <Button
@@ -24,7 +24,7 @@ const TeacherLogin = ({ classes }) => {
                     <I18n label="RequestAccount" />
                 </Button>
             </CardContent>
-            <CardActions className={classes.actions}>
+            <CardActions>
                 <Button
                     variant="contained"
                     color="primary"
