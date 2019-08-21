@@ -2,7 +2,7 @@ const translations = {
     Code: "Code",
     Contact: "Contakt",
     Login: "Connexion",
-    LoginWithCode: "Connexion avec code",
+    LoginWithCode: "Connexion élève",
     LoginWithCodeDescription:
         "Veuillez entrer le code donné par votre enseignant-e ou le code de votre Tinkerlamp.",
     Open: "Öffnen",
