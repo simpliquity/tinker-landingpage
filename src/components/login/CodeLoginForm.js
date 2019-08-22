@@ -11,8 +11,22 @@ const CodeLoginForm = () => {
     const [code, setCode] = useState("");
 
     const parsedCode = () => {
-        return code.replace(/[^a-zA-Z0-9]/, "");
+        return code.replace(/[^a-zA-Z0-9-]/g, "");
     };
+
+    const getLink = () => {
+        const parsed = parsedCode();
+        // if (parsed.length == 8) {
+        //     return `https://www.tinkerlamp.com/code/${parsed}`;
+        // } else {
+        //     return `https://www.tinkerlamp.com/?code=${parsed}`;
+        // }
+        if (parsed.length == 8) {
+            return `http://192.168.99.80:3000/code/${parsed}`;
+        } else {
+            return `http://192.168.99.80:3000/?code=${parsed}`;
+        }
+    }
 
     return (
         <Card>
@@ -37,7 +51,7 @@ const CodeLoginForm = () => {
                 <Button
                     variant="contained"
                     color="primary"
-                    href={`https://www.tinkerlamp.com/code/${parsedCode()}`}
+                    href={getLink()}
                 >
                     <I18n label="Open" />
                 </Button>
