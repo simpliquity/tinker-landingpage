@@ -16,17 +16,17 @@ const CodeLoginForm = () => {
 
     const getLink = () => {
         const parsed = parsedCode();
-        // if (parsed.length == 8) {
-        //     return `https://www.tinkerlamp.com/code/${parsed}`;
-        // } else {
-        //     return `https://www.tinkerlamp.com/?code=${parsed}`;
-        // }
         if (parsed.length == 8) {
-            return `http://192.168.99.80:3000/code/${parsed}`;
+            return `https://app.tinkerlamp.com/code/${parsed}`;
         } else {
-            return `http://192.168.99.80:3000/?code=${parsed}`;
+            return `https://app.tinkerlamp.com/?code=${parsed}`;
         }
-    }
+        //if (parsed.length == 8) {
+        //    return `http://localhost:3500/code/${parsed}`;
+        //} else {
+        //    return `http://localhost:3500/?code=${parsed}`;
+        //}
+    };
 
     return (
         <Card>
@@ -48,11 +48,7 @@ const CodeLoginForm = () => {
                 </div>
             </CardContent>
             <CardActions>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    href={getLink()}
-                >
+                <Button variant="contained" color="primary" href={getLink()}>
                     <I18n label="Open" />
                 </Button>
             </CardActions>
