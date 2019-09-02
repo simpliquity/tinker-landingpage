@@ -30,7 +30,12 @@ const TeacherLogin = () => {
                     color="primary"
                     href="https://tinker.isyflow.ch/"
                 >
-                    <I18n label="Login" />
+                    <I18n label="LoginNewPlatform" />
+                </Button>
+            </CardActions>
+            <CardActions>
+                <Button href="https://app.tinkerlamp.com/">
+                    <I18n label="LoginOldPlatform" />
                 </Button>
             </CardActions>
         </Card>

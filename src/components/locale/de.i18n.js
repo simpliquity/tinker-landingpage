@@ -2,6 +2,8 @@ const translations = {
     Code: "Code",
     Contact: "Kontakt",
     Login: "Einloggen",
+    LoginNewPlatform: "Login (Isyflow)",
+    LoginOldPlatform: "Login (alte Plattform)",
     LoginWithCode: "Login für Lernende",
     LoginWithCodeDescription:
         "Bitte geben Sie den von Ihrer Lehrperson angegebenen Code oder den Code Ihrer Tinkerlamp ein.",
