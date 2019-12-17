@@ -26,16 +26,16 @@ const TeacherLogin = () => {
             </CardContent>
             <CardActions>
                 <Button
+                    href="https://app.tinkerlamp.com/"
                     variant="contained"
                     color="primary"
-                    href="https://tinker.isyflow.ch/"
                 >
-                    <I18n label="LoginNewPlatform" />
+                    <I18n label="LoginOldPlatform" />
                 </Button>
             </CardActions>
             <CardActions>
-                <Button href="https://app.tinkerlamp.com/">
-                    <I18n label="LoginOldPlatform" />
+                <Button href="https://tinker.isyflow.ch/">
+                    <I18n label="LoginNewPlatform" />
                 </Button>
             </CardActions>
         </Card>
