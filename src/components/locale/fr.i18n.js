@@ -7,7 +7,7 @@ const translations = {
     LoginWithCode: "Connexion élève",
     LoginWithCodeDescription:
         "Veuillez entrer le code donné par votre enseignant-e ou le code de votre Tinkerlamp.",
-    Open: "Öffnen",
+    Open: "Ouvrir",
     RequestAccount: "Demander un compte utilisateur",
     TeacherLogin: "Connexion enseignant-e",
     TeacherLoginDescription:

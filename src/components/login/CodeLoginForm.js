@@ -16,11 +16,11 @@ const CodeLoginForm = () => {
 
     const getLink = () => {
         const parsed = parsedCode();
-        if (parsed.length == 8) {
-            return `https://app.tinkerlamp.com/code/${parsed}`;
-        } else {
-            return `https://app.tinkerlamp.com/?code=${parsed}`;
-        }
+        //if (parsed.length == 8) {
+        return `https://app.tinkerlamp.com/code/${parsed}`;
+        //} else {
+        //    return `https://app.tinkerlamp.com/?code=${parsed}`;
+        //}
         //if (parsed.length == 8) {
         //    return `http://localhost:3500/code/${parsed}`;
         //} else {
